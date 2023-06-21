@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+    <TextView
+            android:id="@+id/repository_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+    <TextView
+            android:id="@+id/repository_lang"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="#FF4081"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+</LinearLayout>

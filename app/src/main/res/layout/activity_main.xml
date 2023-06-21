@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:background="#F5F5F5">
+
+    <EditText
+            android:id="@+id/search_request_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_request_field_hint"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:background="#FFFFFF"
+            android:padding="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/repository_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:padding="8dp"/>
+
+    <FrameLayout
+            android:id="@+id/user_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#E8EAF6"
+            android:visibility="gone">
+
+        <!-- Add your custom user info view here -->
+
+    </FrameLayout>
+
+    <TextView
+            android:id="@+id/explanation_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:textAlignment="center"
+            android:text="@string/explanation_msg"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"/>
+
+</LinearLayout>
